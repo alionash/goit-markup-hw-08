@@ -14,15 +14,22 @@
 
 .modal {
     position: absolute;
-    width: 528px;
-    height: 581px;
-    background-color: #fff;
-    left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 540px;
+    background-color: #fff;
     border-radius: 4px;
     padding: 40px;
+
+    @include tablet{
+        width: 528px;
+        height: 581px;
+    }
+
 }
+
+
 
 .modal-btn-close {
     position: absolute;
@@ -70,8 +77,9 @@
 }
 
 .modal-input {
-    width: 448px;
+    width: 370px;
     height: 40px;
+    padding: 12px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-bottom: 10px;
@@ -79,6 +87,11 @@
     outline: transparent;
     &:focus {
         border: 1px solid var(--accent-color);
+    }
+
+    @include tablet{
+    width: 448px;
+    height: 40px;
     }
 }
 
@@ -193,4 +206,3 @@
         background-color: #188CE8;
     }
 }
-

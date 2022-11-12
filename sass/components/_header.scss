@@ -41,6 +41,9 @@ display: block;
 
 .contacts__link.mail{
     margin-bottom: 10px;
+    @include desktop{
+        margin-bottom: 0;
+    }
 }
 
 
@@ -55,6 +58,8 @@ display: block;
 .header__container {
     display: flex;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -138,6 +143,8 @@ display: block;
     z-index: 1;
     padding-top: 21px;
     padding-bottom: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
     >.container{
         height: 100%;
         display: flex;
@@ -212,19 +219,27 @@ margin-bottom: 35px;
     color: var(--accent-color);
 }
 
-.mob-soc__list{
-    gap: 20px;
-    // position: relative;
+
+
+.mob-soc__item:not(:last-child) {
+    &::after{
+display: inline-block;
+    content: "";
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+    margin-left: 10px;
+    transform: translateY(25%);
+
+    }
+    
 }
 
-// .mob-soc__link::after{
-//     content: "";
-//     width: 1px;
-//     height: 22px;
-//     background-color: rgba(33, 33, 33, 0.2);
-//     position: absolute;
-//     left: 0;
-// }
+.mob-soc__item:last-child{
+    transform: translateY(25%);
+}
+
 
 .mob-soc__list{
     display: flex;
