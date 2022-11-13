@@ -223,7 +223,7 @@ margin-bottom: 35px;
 
 .mob-soc__item:not(:last-child) {
     &::after{
-display: inline-block;
+    display: inline-block;
     content: "";
     width: 1px;
     height: 22px;

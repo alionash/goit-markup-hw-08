@@ -1,7 +1,7 @@
 .hero {
     background-color: var(--secondary-background-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-mob-1x.jpg);
-    padding: 200px 0;
+    padding: 118px 0px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,6 +21,7 @@
     }
 
     @include desktop{
+        padding: 200px 0;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-desktop-1x.jpg);
         @include retina{
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-desktop-2x.jpg);
@@ -46,15 +47,8 @@
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-
-    @include mobile{
     max-width: 360px;
 
-    }
-    @include tablet{
-        max-width: 360px;
-
-    }
     @include desktop{
         font-size: 44px;
         line-height: 1.36;

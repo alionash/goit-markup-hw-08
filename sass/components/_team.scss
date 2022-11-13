@@ -1,8 +1,13 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     background-color: var(--third-background-color);
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
 }
 
@@ -18,7 +23,7 @@
     @include tablet{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        gap: 30px;
 
     }
     @include desktop{
