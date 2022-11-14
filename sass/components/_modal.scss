@@ -21,6 +21,8 @@
     background-color: #fff;
     border-radius: 4px;
     padding: 40px;
+    overflow-y: auto;
+    max-height: 100vh;
 
     @include tablet{
         width: 528px;
